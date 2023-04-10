@@ -18,7 +18,7 @@
 ![badge](https://img.shields.io/badge/Database-MongoDB-ff69b4)
 
 ## Installation
-### To install [Website Name] on your local machine, follow these steps:
+### To install on your local machine, follow these steps:
 
 1. Clone the repository
 2. Install the required dependencies using npm install
