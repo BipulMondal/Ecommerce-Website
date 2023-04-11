@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 import { useCartContext } from './context/CartContext'
 import { NavLink } from 'react-router-dom';
 import FormatPrice from './helpers/FormatPrice';
@@ -12,8 +12,6 @@ const Cart = () => {
     const navigate = useNavigate();
 
     const API = "http://localhost:4000/api/v1/orders"
-
-    const [orderSuccess, setOrderSuccess] = useState(false)
   
     const handleOrder = async () => {
       const token = localStorage.getItem("token");

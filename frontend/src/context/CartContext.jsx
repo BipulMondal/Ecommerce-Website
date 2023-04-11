@@ -35,8 +35,8 @@ const CartProvider = ({ children }) => {
         }
     };
 
-    const addToCart = (id, name, color, amount, price, image, product) => {
-        dispatch({type: "ADD_TO_CART", payload:{id, name, color, amount, price, image, product}})
+    const addToCart = (id, name, color, amount, price, images, product) => {
+        dispatch({type: "ADD_TO_CART", payload:{id, name, color, amount, price, image:images[0], product}})
         dispatch({ type: "CART_TOTAL_ITEM" })
         dispatch({ type: "CART_TOTAL_PRICE" })
     }
@@ -68,7 +68,6 @@ const CartProvider = ({ children }) => {
         if (userId) {
             getCartItem(API);
           }
-        // getCartItem(API)
     }, []);
 
   return (

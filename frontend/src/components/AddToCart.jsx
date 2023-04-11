@@ -14,7 +14,6 @@ const AddToCart = ({ product }) => {
   // console.log(product)
 
   const [color, setColor] = useState(colors[0]);
-  const [image, setImage] = useState(images[0]);
   const [amount, setAmount] = useState(1);
 
   const setDecrease = () => {
@@ -46,12 +45,12 @@ const AddToCart = ({ product }) => {
         color,
         amount,
         price,
-        image,
+        image: images[0]
       },
       config
     );
 
-    addToCart(_id, name, color, amount, image, price, product);
+    addToCart(_id, name, color, amount, images[0], price, product);
   };
 
   return (
