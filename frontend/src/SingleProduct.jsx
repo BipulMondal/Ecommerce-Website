@@ -22,7 +22,8 @@ const SingleProduct = () => {
 
   useEffect(() => {
     getSingleProduct(`${API}/${id}`);
-  }, []);
+  
+  },[]);
 
   return (
     <div className="bg-gray-100">
